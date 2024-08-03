@@ -1,31 +1,30 @@
+package HundredEightyToTwoHundred;
+
 import java.util.Scanner;
 
-public class HundredAndNinety {
+public class HundredAndNinetySix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a String: ");
-        String input = scanner.nextLine();
+        String str = scanner.nextLine();
 
-        int digitCounter = 0;
-        int charCounter = 0;
         int letterCounter = 0;
+        int digitCounter = 0;
 
-        for (int i = 0; i < input.length(); i++) {
-            char ch = input.charAt(i);
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
             if (Character.isLetter(ch)) {
                 letterCounter++;
             } else if (Character.isDigit(ch)) {
                 digitCounter++;
-            } else {
-                charCounter++;
             }
         }
 
-        if (digitCounter == charCounter && digitCounter == letterCounter) {
+        if (letterCounter == digitCounter) {
             System.out.println("Ok");
         } else {
-            System.out.println("Not!");
+            System.out.println("Error!");
         }
     }
 }

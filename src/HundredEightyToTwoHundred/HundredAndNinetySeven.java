@@ -1,3 +1,5 @@
+package HundredEightyToTwoHundred;
+
 import java.util.Scanner;
 
 public class HundredAndNinetySeven {
